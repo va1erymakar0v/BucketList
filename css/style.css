@@ -1,0 +1,188 @@
+body {
+	margin: 0;
+	padding: 0;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 20px;
+}
+
+.wrapper {
+	overflow: hidden;
+}
+
+*, *:before, *:after {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	text-decoration: none;
+	color: #000;
+}
+
+.container {
+	width: 100%;
+	max-width: 1500px;
+	margin: 0 auto;
+
+	padding: 0 30px;
+}
+
+/*----------------------------------*/
+
+.title {
+	margin-top: 50px;
+
+	text-align: center;
+
+	margin-bottom: 75px;
+}
+
+.subtitle {
+	margin-top: 35px;
+
+	font-size: 22px;
+
+	padding-bottom: 5px;
+}
+
+.sub_subtitle {
+	font-size: 14px;
+	color: grey;
+
+	padding-bottom: 7px;
+
+	border-bottom: 1px solid #000;
+	margin-bottom: 20px;
+}
+.sub_subtitle span {
+	color: inherit;
+}
+
+.sub_subtitle span:first-child {
+	margin-right: 6px;
+}
+.sub_subtitle span:last-child {
+	margin-left: 6px;
+}
+/*----------------------------------*/
+
+.list__item {
+	display: grid;
+	grid-template-columns: 25px 1fr 35px 35px;
+	grid-template-rows: 35px auto auto;
+	grid-template-areas: 'number heading arrow checkbox' '. description . checkbox' '. result . checkbox';
+	column-gap: 10px;
+
+	margin-bottom: 20px;
+}
+
+.list__item__heading {
+	grid-area: heading;
+}
+
+.list__item__description {
+	grid-area: description;
+
+	margin-top: 15px;
+	margin-bottom: 10px;
+
+	font-size: 16px;
+}
+
+.list__item__result {
+	grid-area: result;
+
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.list__item__result img:not(:last-child) {
+ margin-right: 15px;
+}
+
+.list__item__result img {
+	margin-top: 15px;
+}
+
+.list__item__checkbox {
+	grid-area: checkbox;
+
+	height: 35px;
+
+	margin: 0;
+	border: 1px solid black;
+}
+
+ul li {
+	font-size: 15px;
+}
+
+.sub_done {
+	color: green;
+	text-decoration: line-through;
+}
+
+.sublist_done-title {
+	display: block;
+	width: 100%;
+	font-size: 18px;
+	font-weight: bold;
+	margin-bottom: 15px;
+	margin-top: 20px;
+}
+/*--------------------------------*/
+
+.done .list__item__checkbox {
+	background-color: green;
+}
+
+.done .list__item__number, .done .list__item__heading {
+	color: green;
+}
+
+.done .list__item__arrow {
+	display: block;
+}
+
+.done .list__item__result.active {
+	display: block;
+}
+
+
+/*--------------------------------*/
+.final {
+	font-size: 23px;
+	padding-top: 15px;
+	border-top: 1px solid #000;
+	margin-top: 150px;
+	margin-bottom: 300px;
+}
+
+.final span:not(:nth-child(2)) {
+	margin-left: 10px;
+	margin-right: 10px;
+	color: grey;
+	font-style: italic;
+}
+
+.final__intro {
+	margin-bottom: 10px;
+}
+
+.final__res_title {
+	margin-right: 7px;
+}
+
+
+/* images and video */
+
+img, video {
+	width: 100%;
+	height: auto;
+}
+
+.two-row {
+	max-width: 48%;
+}
+
+.three-row {
+	max-width: 31.5%;
+}
