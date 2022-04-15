@@ -191,3 +191,11 @@ iframe {
 .three-row {
 	max-width: 31.5%;
 }
+
+#basketball {
+	grid-template-areas: 'number heading arrow checkbox' '. description . checkbox' 'result result result result';
+}
+
+#basketball iframe {
+	margin-left: 20px;
+}
