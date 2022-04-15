@@ -12,6 +12,11 @@
 	.three-row, .two-row, img {
 		max-width: 85%;
 	}
+
+	iframe {
+		width: 100%;
+		height: 395px;
+	}
 }
 
 @media (max-width: 650px) {
@@ -19,7 +24,7 @@
 		font-size: 18px;
 	}
 
-	.three-row, .two-row, img {
+	.three-row, .two-row, img, iframe {
 		max-width: none;
 	}
 
